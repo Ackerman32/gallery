@@ -153,8 +153,43 @@ h1 {
     animation: slideDownFade .5s .5s forwards;
 }
 
+.overlay:target .next,
+.overlay:target .prev {
+    animation: fadeAjah .5s .5s forwards;
+}
+
+
+/* navigasi */
+
+.next,
+.prev {
+    width: 57px;
+    height: 93px;
+    background-image: url(../img/NEXT\ 1.png);
+    position: absolute;
+    /* agar textnya ilang */
+    text-indent: -9999px;
+    top: 40%;
+    margin-left: 50px;
+    opacity: 0;
+}
+
+.prev {
+    background-image: url(../img/BACK.png);
+    margin-left: -100px;
+}
+
 
 /* animasi */
+
+@keyframes fadeAjah {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 @keyframes zoomDanFade {
     0% {
