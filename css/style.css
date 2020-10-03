@@ -131,7 +131,7 @@ h1 {
 }
 
 .overlay:target img {
-    animation: zoomDanFade 1s;
+    animation: fadeAjah 1s;
     border-radius: 0%;
 }
 
